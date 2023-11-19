@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="dydx.png" type="image/x-icon">
+  <script src="https://unpkg.com/mathjs@9.4.4/lib/browser/math.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML-full"></script>
+  <script src="https://cdn.plot.ly/plotly-2.3.0.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white text-xl">
+    <br /><br />
+    <form id="form">
+      <label class="text-xl"for="expression">f=</label>
+      <input type="text" class="text-black rounded-md " id="expression" placeholder="İfade gir!" />
+      &nbsp;
+      <input type="submit" value="Hesapla" class="cursor-pointer bg-white text-black py-1 px-2 rounded " />
+    </form>
+    <br /><br />
+    <div>
+      <h4  class="text-bold" >Türev:</h4>
+      <br />
+      <div class="text-bold text-red-500" id="derivative"></div>
+      <br />
+      <hr />
+      <h4>Grafik:</h4>
+      <br />
+      <div id="plot"></div>
+      <br />
+    </div>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
